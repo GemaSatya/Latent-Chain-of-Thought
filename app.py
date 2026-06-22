@@ -624,7 +624,7 @@ with tab_token:
 
     data_bp = [results[m]["series"].values for m in MODES]
     bp = axes[1].boxplot(
-        data_bp, labels=["No CoT", "Full CoT", "Latent\nCoT"], patch_artist=True,
+        data_bp, tick_labels=["No CoT", "Full CoT", "Latent\nCoT"], patch_artist=True,
         medianprops=dict(color=WHITE, linewidth=2),
         whiskerprops=dict(color=MUTED), capprops=dict(color=MUTED),
         flierprops=dict(markerfacecolor=MUTED, marker="o", markersize=3, alpha=0.5),
